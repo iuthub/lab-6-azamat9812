@@ -137,24 +137,24 @@
 		$res = "Validation error";
 
 	
-		if (preg_match("/^[[:alpha:]]{2,}$/i", $name)) 						{} else echo "1";																	
-		if (preg_match("/^[[:alnum:]]+@[[:alnum:]]+\.[[:alpha:]]{1,3}$/i", $email)) {} else echo "2";
-		if (preg_match("/^.{5,}$/i", $user)) {} else echo "3";
-		if (preg_match("/^.{8,}$/i", $pass)){} else echo "4";
-		if ($pass == $pass2) {} else echo "5";
-		if (preg_match("/^\d{2}\.\d{2}\.\d{4}$/i", $date)) {} else echo "6";
-		if (preg_match("/^(Male|Female)$/i", $gender)) {} else echo "7";
-		if (preg_match("/^(Single|Married|Divorced|Widowed)$/i", $status)) {} else echo "8";
-		if (preg_match("/^.+$/i", $address)) {} else echo "9";
-		if (preg_match("/^[[:alpha:]]+$/i", $city)) {} else echo "10";
-		if (preg_match("/^[0-9]{6}$/i", $postal)) {} else echo "11";
-		if (preg_match("/^[0-9]{9}$/i", $mobile)){} else echo "12";
-		if (preg_match("/^[0-9]{9}$/i", $home)){} else echo "13";
-		if (preg_match("/^[0-9]{16}$/i", $credit)){} else echo "14";
-		if (preg_match("/^\d{2}\.\d{2}\.\d{4}$/i", $expiry)) {} else echo "15";
-		if (preg_match("/^UZS( +|)[\d,\.]+$/i", $salary)) {} else echo "16";
-		if (preg_match("/^(http|https):\/\/(www|).+$/i", $url)) {} else echo "17";
-		if (preg_match("/^([0-3]{1}(\.[0-9]{1,2}|)|4(\.[0-5]{1}[0-9]{0,1}|))$/i", $gpa)) {} else echo "18";
+		if (preg_match("/^[[:alpha:]]{2,}$/i", $name)) 																							
+		if (preg_match("/^[[:alnum:]]+@[[:alnum:]]+\.[[:alpha:]]{1,3}$/i", $email)) 
+		if (preg_match("/^.{5,}$/i", $user)) 
+		if (preg_match("/^.{8,}$/i", $pass))
+		if ($pass == $pass2)
+		if (preg_match("/^\d{2}\.\d{2}\.\d{4}$/i", $date))
+		if (preg_match("/^(Male|Female)$/i", $gender))
+		if (preg_match("/^(Single|Married|Divorced|Widowed)$/i", $status))
+		if (preg_match("/^.+$/i", $address)) 
+		if (preg_match("/^[[:alpha:]]+$/i", $city)) 
+		if (preg_match("/^[0-9]{6}$/i", $postal)) 
+		if (preg_match("/^[0-9]{9}$/i", $mobile))
+		if (preg_match("/^[0-9]{9}$/i", $home))
+		if (preg_match("/^[0-9]{16}$/i", $credit))
+		if (preg_match("/^\d{2}\.\d{2}\.\d{4}$/i", $expiry)) 
+		if (preg_match("/^UZS( +|)[\d,\.]+$/i", $salary)) 
+		if (preg_match("/^(http|https):\/\/(www|).+$/i", $url)) 
+		if (preg_match("/^([0-3]{1}(\.[0-9]{1,2}|)|4(\.[0-5]{1}[0-9]{0,1}|))$/i", $gpa))
 			$res = "Thank you for registration!";
 	?>
 		<h1><?=$res?></h1>
