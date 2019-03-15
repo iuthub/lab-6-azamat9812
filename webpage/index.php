@@ -140,7 +140,7 @@
 		if (preg_match("/^[[:alpha:]]{2,}$/i", $name)) 																							
 		if (preg_match("/^[[:alnum:]]+@[[:alnum:]]+\.[[:alpha:]]{1,3}$/i", $email)) 
 		if (preg_match("/^.{5,}$/i", $user)) 
-		if (preg_match("/^.{8,}$/i", $pass))
+		if (preg_match("/^(?=\w{6,10}$)(?=[^a-z]*[a-z])(?=(?:[^A-Z]*[A-Z]){3})(?=\D*\d)/i", $pass))
 		if ($pass == $pass2)
 		if (preg_match("/^\d{2}\.\d{2}\.\d{4}$/i", $date))
 		if (preg_match("/^(Male|Female)$/i", $gender))
